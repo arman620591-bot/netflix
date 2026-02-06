@@ -25,11 +25,11 @@
 @keyframes all{
     10%{
        transform: translate(20px);
-       height: 20%;
+      
     }
     to{
         transform: translate(20px 10px);
-        height: 100%;
+       
     }
 }
 .box2{
