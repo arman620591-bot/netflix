@@ -13,35 +13,57 @@
 .box{
     display: flex;
     gap: 20px;
+    position: relative;
 }
 
 .box1{
-    background-color: red;
+    background:linear-gradient(to top,rgb(203, 0, 0),red );
     height: 200px;
     width: 40px;
-    animation: all 4s ease-in-out 1s;
-    
+    animation: all 4s ease   ;
+    position: relative;
 }
 @keyframes all{
-    10%{
-       transform: translate(20px);
-      
+    from{
+      height: 200px;
+    
     }
     to{
-        transform: translate(20px 10px);
-       
+        height: 0px;
     }
 }
 .box2{
-    background-color: rgb(9, 225, 49);
+    background-color: rgb(250, 47, 47);
     height: 200px;
     width: 40px;
     transform: skew(30deg);
     z-index: 2;
+     animation: all2 4s ease  2.6s ;
+     position: relative;
     
 }
+@keyframes all2{
+    from{
+      height: 0px;
+    
+    }
+    to{
+        height: 200px;
+    }
+}
 .box3{
-    background-color: red;
+    background:linear-gradient(to top,red,rgb(203, 0, 0));
     height: 200px;
     width: 40px;
+    position: relative;
+    animation: all3 4s ease  5s ;
+}
+@keyframes all3{
+    from{
+      height: 200px;
+    
+    }
+    to{
+        height: 0px;
+    }
 }
